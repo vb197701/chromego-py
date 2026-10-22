@@ -27,6 +27,18 @@ proxies:
   down: 55 Mbps
 - name: 🇫🇷 FR-HYSTERIA-3
   type: hysteria
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 FR-HYSTERIA-4
+  type: hysteria
   server: 62.210.70.191
   port: 23556
   auth-str: github.com/Alvin9999-newpac/fanqiang
@@ -37,7 +49,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇫🇷 FR-HYSTERIA-4
+- name: 🇫🇷 FR-HYSTERIA-5
   type: hysteria
   server: 62.210.70.191
   port: 24667
@@ -49,37 +61,25 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇫🇷 FR-HYSTERIA-5
-  type: hysteria
-  server: 163.172.117.163
-  port: 36699
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇩🇪 DE-HYSTERIA-6
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  password: dongtaiwang.com
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11
-  down: 55
-- name: 🇺🇸 US-HYSTERIA-7
+- name: 🇺🇸 US-HYSTERIA-6
   type: hysteria
   server: 137.175.82.44
   port: 443
   password: dongtaiwang.com
   auth-str: dongtaiwang.com
   sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11
+  down: 55
+- name: 🇩🇪 DE-HYSTERIA-7
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  password: dongtaiwang.com
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -97,18 +97,6 @@ proxies:
   - h3
 - name: 🌐 UNK-HYSTERIA-9
   type: hysteria
-  server: fan.193919.xyz
-  port: 55443
-  password: dongtaiwang.com
-  auth-str: dongtaiwang.com
-  sni: fan.193919.xyz
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: 11
-  down: 55
-- name: 🌐 UNK-HYSTERIA-10
-  type: hysteria
   server: 142.249.37.83
   port: 22222
   password: dongtaiwang.com
@@ -119,17 +107,29 @@ proxies:
   - h3
   up: 11
   down: 55
+- name: 🌐 UNK-HYSTERIA-10
+  type: hysteria
+  server: fan.193919.xyz
+  port: 55443
+  password: dongtaiwang.com
+  auth-str: dongtaiwang.com
+  sni: fan.193919.xyz
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: 11
+  down: 55
 - name: 🌐 UNK-NAIVE-11
   type: http
-  server: fan.193919.xyz
-  port: 33556
+  server: hk.336892.xyz
+  port: 33550
   username: dongtaiwang.com
   password: dongtaiwang.com
   tls: true
 - name: 🌐 UNK-NAIVE-12
   type: http
-  server: hk.336892.xyz
-  port: 33550
+  server: fan.193919.xyz
+  port: 33556
   username: dongtaiwang.com
   password: dongtaiwang.com
   tls: true
