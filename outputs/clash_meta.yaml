@@ -98,10 +98,10 @@ proxies:
 - name: 🌐 UNK-HYSTERIA-9
   type: hysteria
   server: 142.249.37.83
-  port: 22222
+  port: 33333
   password: dongtaiwang.com
   auth-str: dongtaiwang.com
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
